@@ -1,20 +1,27 @@
+.workspace {
+  margin: 0 auto;
+  padding: 50px;
+}
+
 .canvas {
   display: flex;
   justify-content: center;
   align-items: center;
 
   position: relative;
-  margin: 0px auto;
-  margin-top: 50px;
+  margin: 0 auto;
   background-color: #ccc;
-  width: 85%;
+  width: 100%;
   height: 85vh;
   padding: 50px;
-  /* padding-top: 56.25%; */
-  /* sets aspect ratio to 16:9 */
+  overflow: hidden;
 }
 
-.credit {
+.canvas__text {
+  width: 100%;
+}
+
+.canvas__unsplash-credit {
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -24,6 +31,73 @@
   padding: 2px 30px;
 }
 
-.credit a, credit a:visited {
+.canvas__unsplash-credit a, .canvas__unsplash-credit a:visited {
   color: #fff;
+}
+
+.customize {
+  display: flex;
+  width: 95%;
+  margin: 0px auto;
+  margin-bottom: 100px;
+}
+
+.customize > section {
+  flex-grow: 1;
+  padding: 20px;
+  position: relative;
+}
+
+.customize__header {
+  text-align: center;
+}
+
+.customize__font > * {
+  display: block;
+}
+
+.customize__button {
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  background-color: #50e3c2;
+  border: none;
+  box-shadow: 3px 3px #44B59B;
+  padding: 7px 20px;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.customize__button:active {
+  margin-top: 3px;
+  margin-left: 3px;
+  box-shadow: none;
+}
+
+.btn--generator {
+  display: block;
+  width: 100%;
+  margin: 20px 0px;
+  padding: 15px 0px
+}
+
+.customize__color--picker {
+  position: absolute;
+  z-index: 99999;
+  display: block;
+  right: -110px;
+  bottom: 90px;
+}
+
+.sketch-picker {
+  z-index: 99;
+}
+
+.customize__color--cover {
+  position: fixed;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
