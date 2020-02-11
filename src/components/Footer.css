@@ -1,0 +1,8 @@
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  outline: 1px solid green;
+  font-size: 0.8rem;
+}
